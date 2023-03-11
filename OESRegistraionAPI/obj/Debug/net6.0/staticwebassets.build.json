@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "tx3TIG5kfJ51waCNjqu9Zg/734pCBPvJgTUuiXF+BJo=",
+  "Source": "OESRegistraionAPI",
+  "BasePath": "_content/OESRegistraionAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
