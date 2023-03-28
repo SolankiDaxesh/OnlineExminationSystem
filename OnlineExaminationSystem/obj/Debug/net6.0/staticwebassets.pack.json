@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\OnlineExaminationSystem.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\DaxeshSolanki\\source\\repos\\OnlineExminationSystem\\OnlineExaminationSystem\\wwwroot\\Images\\frame.png",
+      "PackagePath": "staticwebassets\\Images\\frame.png"
+    },
+    {
       "Id": "C:\\Users\\DaxeshSolanki\\source\\repos\\OnlineExminationSystem\\OnlineExaminationSystem\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

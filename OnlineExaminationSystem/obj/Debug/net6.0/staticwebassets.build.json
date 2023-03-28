@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jRTf54k6YBlo+WITXwNEeLt8FwVfKpJ/mD5ZxR/uIZw=",
+  "Hash": "g7+Oax62vugo/LtVesKMf2coOChkq0eeMq4R4Y3SjVw=",
   "Source": "OnlineExaminationSystem",
   "BasePath": "_content/OnlineExaminationSystem",
   "Mode": "Default",
@@ -95,6 +95,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\DaxeshSolanki\\source\\repos\\OnlineExminationSystem\\OnlineExaminationSystem\\wwwroot\\Images\\frame.png",
+      "SourceId": "OnlineExaminationSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DaxeshSolanki\\source\\repos\\OnlineExminationSystem\\OnlineExaminationSystem\\wwwroot\\",
+      "BasePath": "_content/OnlineExaminationSystem",
+      "RelativePath": "Images/frame.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\frame.png"
     },
     {
       "Identity": "C:\\Users\\DaxeshSolanki\\source\\repos\\OnlineExminationSystem\\OnlineExaminationSystem\\wwwroot\\js\\site.js",

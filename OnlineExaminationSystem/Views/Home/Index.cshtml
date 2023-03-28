@@ -1,8 +1,178 @@
-﻿@{
+﻿@*@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@
+
+@model OnlineExaminationSystem.Models.Registration
+
+@{
+    ViewData["Title"] = "StudentLogin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .btn.btn-primary {
+        margin-top: 13px;
+    }
+
+    .btn.btn-info {
+        margin-top: 13px;
+        background-color:transparent;
+        border:none;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    button.btn.btn-sm.btn-secondary {
+        margin-top: -4px;
+        margin-left:10px;
+    }
+    img, svg {
+        margin: 10px 10px 10px 10px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .modal-title {
+        margin-bottom: 0;
+        line-height: 1.5;
+        margin-right: 40px;
+    }
+
+    .form-outline.mb-5 {
+        margin: 48px 50px 97px 84px;
+    }
+</style>
+
+<script>
+    function View() {
+        $.ajax({
+            type: "POST",
+            //url: '/Popup/UserPageView/' + Id,
+            contentType: "application/text; charset=utf-8",
+            dataType: "text",
+            async: false,
+            success: function (data) {
+                $('.modal-body').html(data);
+                $("#myModal").modal("show");
+            }
+        })
+    }
+    function ViewPopUP() {
+        $.ajax({
+            type: "POST",
+            //url: '/Popup/UserPageView/' + Id,
+            contentType: "application/text; charset=utf-8",
+            dataType: "text",
+            async: false,
+            success: function (data) {
+                $('.modal-body').html(data);
+                $("#example").modal("show");
+            }
+        })
+    }
+</script>
+
+
+<h4> Student Login</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="StudentLogin">
+            <div validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label for="EnrollmentId" class="control-label">Enrollment Number</label>
+                <input for="EnrollmentId" class="form-control" />
+                <span validation-for="EnrollmentId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="Password" class="control-label">Password</label>
+                <input for="Password" class="form-control" />
+                <span validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="button" value="Login" class="btn btn-primary" style="cursor:pointer" title="View" onclick="ViewPopUP()">Login</button>
+                <button type="button" class="btn btn-info" style="cursor:pointer" title="View" onclick="View()">View Intructions</button>
+
+            </div>
+        </form>
+    </div>
 </div>
+
+
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                @*<button type="button" class="btn-close" data-dismiss="model"></button>*@
+                <h4 class="modal-title">Steps to Generate New Password</h4>
+            </div>
+            <div class="form-outline mb-4">
+                <br />
+                <ul>
+                    <li>
+                        Scan below QR code and send the message: <b>whin-signup</b>.
+                        <br />
+                        <img src="~/images/frame.png" />
+                        <br />
+                    </li>
+                    <li>
+                        After Sending the Message you will receive 5 digit OTP.
+                    </li>
+                </ul>
+                <div class="align-content-center" style="margin-left:10px">
+                    <b> if you are unable to scan QR code then follow below steps</b>
+                </div>
+                <br />
+                <ul>
+                    <li>
+                        Save the number <b>+34 605 797 764</b> with name of <b>Whin Bot</b>.
+                    </li>
+                    <li>
+                        After Saving the number Open your Whatsapp select <b>Whin Bot</b> and send the message: <b>whin-signup</b>.
+                    </li>
+                    <li>
+                        After Sending the Message you will receive 5 digit OTP.
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="example" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                @*<button type="button" class="btn-close" data-dismiss="model"></button>*@
+                <h4 class="modal-title">Verify OTP</h4>
+            </div>
+            <div class="form-outline mb-5">
+                <input type="number" max="5" placeholder="Enter OTP"/>
+                <button class="btn btn-sm btn-secondary" >Verify</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+@*@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+*@
