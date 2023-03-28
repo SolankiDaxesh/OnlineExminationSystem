@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DaxeshSolanki\\source\\repos\\OESRegistraionAPI\\OESRegistraionAPI.csproj": {}
+    "C:\\Users\\DaxeshSolanki\\source\\repos\\OnlineExminationSystem\\OESRegistraionAPI\\OESRegistraionAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DaxeshSolanki\\source\\repos\\OESRegistraionAPI\\OESRegistraionAPI.csproj": {
+    "C:\\Users\\DaxeshSolanki\\source\\repos\\OnlineExminationSystem\\OESRegistraionAPI\\OESRegistraionAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DaxeshSolanki\\source\\repos\\OESRegistraionAPI\\OESRegistraionAPI.csproj",
+        "projectUniqueName": "C:\\Users\\DaxeshSolanki\\source\\repos\\OnlineExminationSystem\\OESRegistraionAPI\\OESRegistraionAPI.csproj",
         "projectName": "OESRegistraionAPI",
-        "projectPath": "C:\\Users\\DaxeshSolanki\\source\\repos\\OESRegistraionAPI\\OESRegistraionAPI.csproj",
+        "projectPath": "C:\\Users\\DaxeshSolanki\\source\\repos\\OnlineExminationSystem\\OESRegistraionAPI\\OESRegistraionAPI.csproj",
         "packagesPath": "C:\\Users\\DaxeshSolanki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DaxeshSolanki\\source\\repos\\OESRegistraionAPI\\obj\\",
+        "outputPath": "C:\\Users\\DaxeshSolanki\\source\\repos\\OnlineExminationSystem\\OESRegistraionAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,9 +44,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
             }
           },
           "imports": [
@@ -68,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
